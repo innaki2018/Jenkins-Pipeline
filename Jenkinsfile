@@ -24,23 +24,4 @@ stages{
             }
         }
 
-        /*stage ('Deployments'){
-            parallel{
-                stage ('Deploy to Staging'){
-                    steps {
-                        sh "scp **/target/*.war innaki@innaki-VirtualBox:/home/innaki/SCP1"
-                    }
-                }
-
-                stage ("Deploy to Production"){
-                    steps {
-                        sh "scp **/target/*.war innaki@innaki-VirtualBox:/home/innaki/SCP2"
-                    }
-                }
- 
-            }
-           
-        }
-        */
-    }
 }
