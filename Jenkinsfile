@@ -28,13 +28,13 @@ stages{
             parallel{
                 stage ('Deploy to Staging'){
                     steps {
-                        sh "scp -i **/target/*.war innaki@innaki-VirtualBox:/home/innaki/SCP"
+                        sh "scp **/target/*.war innaki@innaki-VirtualBox:/home/innaki/SCP"
                     }
                 }
 
                 stage ("Deploy to Production"){
                     steps {
-                        sh "scp -i **/target/*.war innaki@innaki-VirtualBox:/home/innaki/SCP"
+                        sh "scp **/target/*.war innaki@innaki-VirtualBox:/home/innaki/SCP"
                     }
                 }
             }
