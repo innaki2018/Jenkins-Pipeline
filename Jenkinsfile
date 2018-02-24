@@ -32,11 +32,12 @@ stages{
                     }
                 }
 
-                stage ("Deploy to Production"){
+                /*stage ("Deploy to Production"){
                     steps {
                         sh "scp **/target/*.war innaki@innaki-VirtualBox:/home/innaki/SCP"
                     }
                 }
+                */
             }
         }
     }
